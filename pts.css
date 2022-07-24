@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --color-white: hsl(252, 30%, 100%);
+    --color-light: hsl(252, 30%, 95%);
+    --color-gray: hsl(252, 15%, 65%);
+    --color-primary: hsl(252, 75%, 60%);
+    --color-secondary: hsl(252, 100%, 90%);
+    --color-success: hsl(120, 95%, 65%);
+    --color-danger: hsl(0, 95%, 65%);
+    --color-dark: hsl(252, 30%, 17%);
+    --color-black: hsl(252, 30%, 10%);
+
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.5rem 0.9rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem;
+}
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-dark);
+    background: var(--color-light);
+}
+
+
+/*========== General Styles ==========*/
+.btn {
+    padding: var(--btn-padding);
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    transition: all 300ms ease;
+    font-size: 0.9rem;
+}
+
+.btn:hover {
+    color: black;
+}
+/*========== End Of General Styles ==========*/
+
+
+
+/*========== Navbar ==========*/
+nav {
+    width: 100%;
+    background: var(--color-white);
+    padding: 0.7rem 0;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    z-index: 10;
+}
+
+.menubar {
+    width: 100%;
+    height: 45px;
+    margin: 0 auto;
+    padding: 0 auto;
+    position: relative;
+    left: 30%;
+}
+
+.logo {
+    width: 2.7rem;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    bottom: 5px;
+}
+
+.log {
+    position: relative;
+    left: 60px;
+    bottom: 44px;
+}
+
+.log a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+nav .search-bar {
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+    padding: var(--search-padding);
+    position: relative;
+    width: 325px;
+    bottom: 83px;
+    left: 200px;
+}
+
+nav .search-bar input[type="search"] {
+    background: transparent;
+    width: 13vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-dark);
+}
+
+nav .search-bar input[type="search"]::placeholder {
+    color: var(--color-gray);
+}
+
+nav .btn-primary {
+    background: var(--color-primary);
+    color: white;
+}
+
+nav .non-primary1 {
+    color: var(--color-primary);
+}
+
+nav .non-primary2 {
+    color: var(--color-primary);
+}
+
+nav .button {
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 123px;
+    left: 540px;
+}
+
+hr.solid {
+    border-top: 1px solid #bbb;
+}
+
+.container {
+    height: 100px;
+}
+
+.container_down {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container_down ul li {
+    display: inline-block;
+    padding: 12px;
+}
+
+.container_down ul li a {
+    color: var(--color-primary);
+    font-size: 15px;
+}
+
+.container_down ul li a:hover {
+    color: black;
+}
+/*========== End Of Navbar ==========*/
+
+
+
+/*========== Main ==========*/
+main {
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    transform: translate(-50%);
+    width: 70%;
+}
+
+.middle .texts {
+    padding : 25px 0 20px 0;
+    justify-content: space-between;
+    position: fixed;
+    width: 87.5%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50.3%;
+    transform: translate(-50%, 25%);
+    display:flex;
+    gap: 0.5rem;
+    font-size: 13px;
+}
+
+.middle .texts img{
+    width: 60px;
+}
+
+hr.solid2 {
+    width: 142.9%;
+    border-top: 1px solid #bbb;
+    position: relative;
+    left: 50%;
+    top: 13rem;
+    transform: translate(-50%);
+}
+
+
+
+/*========== End Of Main ==========*/
+
+/*========== Popular Eats ==========*/
+.places_to_stay_image img {
+    position: relative;
+    border-radius: 1%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30px;
+    width: 87.5%;
+    height: 660px;
+    opacity: 100%;
+}
+
+.text h2 {
+    text-align: center;
+    color: white;
+    font-size: 55px;
+    text-shadow: 2px 2px #000000;
+    top: 195px;
+    position: fixed;
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+}
+
+.text h3 {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    text-shadow: 2px 2px #000000;
+    top: 285px;
+    position: fixed;
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+}
+
+.middle .places_to_stay {
+    padding : 25px 0 20px 0;
+    justify-content: space-between;
+    position: fixed;
+    width: 87.5%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    transform: translate(-50%,-225%);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.middle .places_to_stay h2 {
+    color: black;
+    position: fixed;
+    left: 44%;
+    width: 85%;
+    transform: translateX(-50%);
+    padding-top : 19px;
+    top: 350px;
+}
+
+.middle .places_to_stay h5 {
+    position: relative;
+    top: 10px;
+    left: 8px;
+}
+
+.middle .places_to_stay p {
+    position: relative;
+    bottom: 15px;
+    left: 8px;
+    font-size: 14px;
+}
+
+.middle .places_to_stay i {
+    position: relative;
+    bottom: 83px;
+    left: 20px;
+    color: orange;
+}
+
+.middle .places_to_stay h6 {
+    position: relative;
+    bottom: 103px;
+    left: 40px;
+    color: orange;
+}
+
+.middle .places_to_stay .rating {
+    height: 27px;
+    width: 110px;
+    background-color: white;
+    position: relative;
+    bottom: 57px;
+    left: 10px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.middle .places_to_stay .state p {
+    position: relative;
+    bottom: 75px;
+    color: maroon;
+    font-size: 13px;
+}
+
+/* Card Top 1 */
+.card_top1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 23%;
+    height: 325px;
+    border-radius: 15px;
+    position: fixed;
+    top: 425px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0%;
+}
+
+.card_top1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.025);
+}
+
+.card_top1 img {
+    border-radius: 15px;
+    height: 65%;
+}
+
+/* Card Top 2 */
+.card_top2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 23%;
+    height: 325px;
+    border-radius: 15px;
+    position: fixed;
+    top: 425px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 25.667%;
+}
+
+.card_top2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.025);
+}
+
+.card_top2 img {
+    border-radius: 15px;
+    height: 65%;
+}
+
+/* Card Top 3 */
+.card_top3 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 23%;
+    height: 325px;
+    border-radius: 15px;
+    position: fixed;
+    top: 425px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 51.334%;
+}
+
+.card_top3:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.025);
+}
+
+.card_top3 img {
+    border-radius: 15px;
+    height: 65%;
+}
+
+/* Card Top 4 */
+.card_top4 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 23%;
+    height: 325px;
+    border-radius: 15px;
+    position: fixed;
+    top: 425px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 77%;
+}
+
+.card_top4:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.025);
+}
+
+.card_top4 img {
+    border-radius: 15px;
+    height: 65%;
+}
+
+/* Card Bottom 1 */
+.card_bottom1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 23%;
+    height: 325px;
+    border-radius: 15px;
+    position: fixed;
+    top: 775px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0%;
+}
+
+.card_bottom1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.025);
+}
+
+.card_bottom1 img {
+    border-radius: 15px;
+    height: 65%;
+}
+
+/* Card Bottom 2 */
+.card_bottom2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 23%;
+    height: 325px;
+    border-radius: 15px;
+    position: fixed;
+    top: 775px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 25.667%;
+}
+
+.card_bottom2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.025);
+}
+
+.card_bottom2 img {
+    border-radius: 15px;
+    height: 65%;
+}
+
+/* Card Bottom 3 */
+.card_bottom3 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 23%;
+    height: 325px;
+    border-radius: 15px;
+    position: fixed;
+    top: 775px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 51.334%;
+}
+
+.card_bottom3:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.025);
+}
+
+.card_bottom3 img {
+    border-radius: 15px;
+    height: 65%;
+}
+
+/* Card Bottom 4 */
+.card_bottom4 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 23%;
+    height: 325px;
+    border-radius: 15px;
+    position: fixed;
+    top: 775px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 77%;
+}
+
+.card_bottom4:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.025);
+}
+
+.card_bottom4 img {
+    border-radius: 15px;
+    height: 65%;
+}
+/*========== End Of Popular Eats ==========*/
+
+
+
+/*========== Footer ==========*/
+hr.solid_pts {
+    width: 142.9%;
+    border-top: 1px solid #bbb;
+    position: relative;
+    left: 50%;
+    top: 104rem;
+    transform: translate(-50%);
+}
+
+.footer_pts {
+    position: fixed;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 925%);
+    text-align: center;
+    align-items: center;
+}
+
+.footer_pts .footer_links {
+    display: inline-block;
+    padding: 2rem 5rem 1rem 5rem;
+    margin-bottom: 10px;
+}
+
+.footer_pts ul li a {
+    color: var(--color-primary);
+    font-size: 13px;
+}
+
+.footer_pts ul li a:hover {
+    color: black;
+}
+
+.footer_pts .footer_label {
+    font-weight: bold;
+}
+/*========== End Of Footer ==========*/

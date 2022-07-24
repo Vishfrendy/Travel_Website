@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --color-white: hsl(252, 30%, 100%);
+    --color-light: hsl(252, 30%, 95%);
+    --color-gray: hsl(252, 15%, 65%);
+    --color-primary: hsl(252, 75%, 60%);
+    --color-secondary: hsl(252, 100%, 90%);
+    --color-success: hsl(120, 95%, 65%);
+    --color-danger: hsl(0, 95%, 65%);
+    --color-dark: hsl(252, 30%, 17%);
+    --color-black: hsl(252, 30%, 10%);
+
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.5rem 0.9rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem;
+}
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-dark);
+    background: var(--color-light);
+}
+
+
+/*========== General Styles ==========*/
+.btn {
+    padding: var(--btn-padding);
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    transition: all 300ms ease;
+    font-size: 0.9rem;
+}
+
+.btn:hover {
+    color: black;
+}
+/*========== End Of General Styles ==========*/
+
+
+
+/*========== Navbar ==========*/
+nav {
+    width: 100%;
+    background: var(--color-white);
+    padding: 0.7rem 0;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    z-index: 10;
+}
+
+.menubar {
+    width: 100%;
+    height: 45px;
+    margin: 0 auto;
+    padding: 0 auto;
+    position: relative;
+    left: 30%;
+}
+
+.logo {
+    width: 2.7rem;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    bottom: 5px;
+}
+
+.log {
+    position: relative;
+    left: 60px;
+    bottom: 44px;
+}
+
+.log a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+nav .search-bar {
+    background: var(--color-light);
+    border-radius: var(--border-radius);
+    padding: var(--search-padding);
+    position: relative;
+    width: 325px;
+    bottom: 83px;
+    left: 200px;
+}
+
+nav .search-bar input[type="search"] {
+    background: transparent;
+    width: 13vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-dark);
+}
+
+nav .search-bar input[type="search"]::placeholder {
+    color: var(--color-gray);
+}
+
+nav .btn-primary {
+    background: var(--color-primary);
+    color: white;
+}
+
+nav .non-primary1 {
+    color: var(--color-primary);
+}
+
+nav .non-primary2 {
+    color: var(--color-primary);
+}
+
+nav .button {
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 123px;
+    left: 540px;
+}
+
+hr.solid {
+    border-top: 1px solid #bbb;
+}
+
+.container_down {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container_down ul li {
+    display: inline-block;
+    padding: 12px;
+}
+
+.container_down ul li a {
+    color: var(--color-primary);
+    font-size: 15px;
+}
+
+.container_down ul li a:hover {
+    color: black;
+}
+/*========== End Of Navbar ==========*/
+
+
+
+/*========== Main ==========*/
+main {
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    transform: translate(-50%);
+    width: 70%;
+}
+
+container {
+    display: grid;
+    place-items: center;
+}
+/*========== End Of Main ==========*/
+
+
+
+/*========== Incredible Destinations ==========*/
+
+.incredible_destinations {
+    position: fixed;
+    top: 0.1rem;
+}
+
+.incredible_destinations h2 {
+    color: black;
+    position: fixed;
+    top: 44rem;
+    left: 50%;
+    width: 85%;
+    transform: translateX(-50%);
+    padding-top: 2rem;
+}
+
+.destinations {
+    padding-top: 0.1rem;
+    position: relative;
+    left: 50%;
+    width: 87.5%;
+    transform: translate(-50%,-95%);
+    display:flex;
+    justify-content: space-between;
+    height: 14rem;
+    gap: 0.5rem;
+}
+
+.destinations .destination {
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.destinations:hover {
+    box-shadow: 0 3px 4px 3px rgba(0,0,0,0.2);
+}
+
+.destinations .destination b {
+    z-index: 1;
+    position: relative;
+    font-weight: 500;
+    color: black;
+    font-size: 13px;
+    bottom: 10px;
+}
+
+.destinations .card img {
+    border-radius: 15px;
+    height: 85%;
+}
+
+.see_more_1 {
+    border: 1px solid black;
+    border-radius: 5px;
+    background: var(--color-light);
+    padding: 7px 75px;
+    font-size: 15px;
+    cursor: pointer;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 2475%);
+}
+
+.see_more_1:hover {
+    box-shadow: 0 3px 4px 3px rgba(0,0,0,0.2);
+}
+/*========== End Of Incredible Destinations ==========*/
+
+
+
+/*========== Middle Search ==========*/
+.middle .middle_search #search {
+    position: fixed;
+    left: 5%;
+    width: 75%;
+}
+
+.middle .middle_search {
+    position: fixed;
+    left: 50%;
+    top: 345px;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    background: var(--color-white);
+    padding: 0.6rem var(--card-padding);
+    border-radius: var(--border-radius);
+}
+
+.middle .middle_search .btn-primary {
+    position: fixed;
+    right: 10px;
+    top: 9px;
+    background: var(--color-primary);
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px #000000;
+}
+
+.middle .middle_search input[type="search"] {
+    background: transparent;
+    width: 13vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-dark);
+}
+
+.middle .middle_search input[type="search"]::placeholder {
+    color: var(--color-gray);
+}
+
+.search_background {
+    padding: var(--card-padding);
+    top: 310px;
+    z-index: -1;
+}
+
+.search_background img {
+    position: relative;
+    border-radius: 1%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 15px;
+    width: 90%;
+}
+
+.text h2 {
+    text-align: center;
+    color: white;
+    font-size: 55px;
+    text-shadow: 2px 2px #000000;
+    top: 195px;
+    position: fixed;
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+}
+
+.text h3 {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    text-shadow: 2px 2px #000000;
+    top: 285px;
+    position: fixed;
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+}
+/*========== End Of Middle Search ==========*/
+
+
+
+/*========== Popular Activities ==========*/
+.middle .popular_activities {
+    padding : 25px 0 20px 0;
+    justify-content: space-between;
+    position: fixed;
+    top: 110px;
+    width: 87.5%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    transform: translate(-50%,15%);
+    display:flex;
+    gap: 0.5rem;
+}
+
+.middle .popular_activities h2 {
+    color: black;
+    position: fixed;
+    left: 44%;
+    width: 85%;
+    transform: translateX(-50%);
+    padding-top : 15px;
+    top: 950px;
+}
+
+.middle .popular_activities h5 {
+    position: relative;
+    top: 10px;
+    left: 8px;
+}
+
+.middle .popular_activities p {
+    position: relative;
+    top: 9px;
+    left: 8px;
+    font-size: 14px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    top: 990px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.025);
+}
+
+.card img {
+    border-radius: 15px;
+    height: 75%;
+}
+
+.see_more_2 {
+    border: 1px solid black;
+    border-radius: 5px;
+    background: var(--color-light);
+    padding: 7px 75px;
+    font-size: 15px;
+    cursor: pointer;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 1265px);
+}
+
+.see_more_2:hover {
+    box-shadow: 0 3px 4px 3px rgba(0,0,0,0.2);
+}
+/*========== End Of Popular Activities ==========*/
+
+
+
+/*========== Amazing Experiences ==========*/
+.middle .amazing_experiences {
+    padding : 25px 0 25px 0;
+    position: relative;
+    bottom: 200px;
+    width: 87.5%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    transform: translate(-50%,15%);
+    display: flex;
+    gap: 0.1rem;
+}
+
+.middle .amazing_experiences h2 {
+    color: black;
+    position: fixed;
+    left: 38%;
+    width: 87.5%;
+    transform: translateX(-50%);
+    padding-top : 15px;
+    top: 950px;
+}
+
+.card_am {
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    top: 990px;
+    right: 72px;
+}
+
+.card_am:hover {
+    transform: scale(1.025);
+}
+
+.card_am img {
+    border-radius: 15px;
+    height: 75%;
+    width: 95%;
+}
+
+
+.middle .amazing_experiences h5 {
+    position: relative;
+    bottom: 310px;
+    left: 20px;
+    color: white;
+    font-size: 25px;
+    text-shadow: 3px 3px #000000;
+}
+
+.middle .amazing_experiences p {
+    position: relative;
+    bottom: 275px;
+    left: 20px;
+    font-size: 18px;
+    color: white;
+    text-shadow: 2px 2px #000000;
+    width: 90%;
+}
+
+.see_activities_1, .see_activities_2 {
+    background-color: #ffffff;
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    z-index: 5;
+    left: 20px;
+    text-decoration: none;
+}
+
+.see_activities_1 {
+    bottom: 147px;
+}
+
+.see_activities_2 {
+    bottom: 120px;
+}
+/*========== End Of Amazing Experiences ==========*/
+
+
+
+/*========== FOOTER ==========*/
+hr.solid2 {
+    width: 142.9%;
+    border-top: 1px solid #bbb;
+    position: fixed;
+    top: 130rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    position: fixed;
+    top: 132rem;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 1%);
+    text-align: center;
+    align-items: center;
+}
+
+.footer_inner {
+    text-align: center;
+    align-items: center;
+}
+
+.footer_links {
+    display: inline-block;
+    padding: 2rem 5rem 2.5rem 5rem;
+}
+
+ul li a {
+    color: var(--color-primary);
+    font-size: 13px;
+}
+
+ul li a:hover {
+    color: black;
+}
+
+.footer_label {
+    font-weight: bold;
+}
+/*========== End Of Footer ==========*/
